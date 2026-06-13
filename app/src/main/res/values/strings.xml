@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">AguaApp</string>
+    <!-- Notificaciones -->
+    <string name="notif_channel_name">
+        Recordatorio de Agua</string>
+    <string name="notif_channel_desc">
+        Te recuerda tomar agua</string>
+    <string name="notif_title">
+        Hora de hidratarte</string>
+    <string name="notif_text">
+        Recuerda tomar un vaso de agua</string>
+    <!-- Pantalla principal -->
+    <string name="main_title">
+        Recordatorio de Hidratación</string>
+    <string name="btn_send_notification">
+        Enviar recordatorio</string>
+    <string name="history_title">
+        Historial de recordatorios</string>
+    <string name="no_records">
+        Aún no hay recordatorios</string>
+    <string name="permission_needed">
+        Se necesita permiso de notificaciones</string>
+    <string name="btn_grant_permission">
+        Otorgar permiso</string>
+    <string name="reminder_received">
+        Recordatorio recibido</string>
+    <string name="drank_water">
+        \u00A1Tom\u00E9 agua!</string>
+    <string name="skipped_water">
+        Ahora no</string>
+    <string name="monitoring_active">
+        Monitoreo activo</string>
+    <string name="monitoring_inactive">
+        Monitoreo inactivo</string>
+    <string name="btn_start">
+        Iniciar monitoreo</string>
+    <string name="btn_stop">
+        Detener monitoreo</string>
+</resources>
