@@ -34,15 +34,42 @@ fun MainScreen(
                 .padding(16.dp)
                 .fillMaxSize()
         ) {
-// Boton para enviar notificacion
-            Button(
-                onClick = onSendNotification,
-                modifier = Modifier
-                    .fillMaxWidth()
+// Estado del monitoreo
+            Card(
+                modifier = Modifier.fillMaxWidth()
             ) {
-                Text(stringResource(
-                    R.string.btn_send_notification
-                ))
+                Column(
+                    modifier = Modifier
+                        .padding(16.dp)
+                        .fillMaxWidth(),
+                    horizontalAlignment =
+                        Alignment.CenterHorizontally
+                ) {
+                    Text(
+                        text = stringResource(
+                            if (viewModel
+                                    .isMonitoring.value)
+                                R.string.monitoring_active
+                            else
+                                R.string.monitoring_inactive
+                        ),
+                        fontSize = 18.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                    Spacer(
+                        modifier = Modifier.height(8.dp)
+                    )
+                    Button(
+                        onClick = onSendNotification
+                    ) {
+                        Text(stringResource(
+                            if (viewModel
+                                    .isMonitoring.value)
+                                R.string.btn_stop
+                            else R.string.btn_start
+                        ))
+                    }
+                }
             }
             Spacer(
                 modifier = Modifier.height(16.dp)
